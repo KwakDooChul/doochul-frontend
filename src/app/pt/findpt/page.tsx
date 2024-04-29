@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import SectionTItle from './../../../components/SectionTItle';
+import TrainerList from '../../../containers/pt/TrainerList';
 
 const page = () => {
 
@@ -10,15 +10,7 @@ const page = () => {
 
         {/* 트레이너 리스트 */}
 
-        <ul className='flex md:flex-row flex-start flex-wrap py-2 gap-[2%] gap-y-4'>
-          <li className='h-[300px] w-[49%] bg-red-200'></li>
-          <li className='h-[300px] w-[49%] bg-red-200'></li>
-          <li className='h-[300px] w-[49%] bg-red-200'></li>
-          <li className='h-[300px] w-[49%] bg-red-200'></li>
-          <li className='h-[300px] w-[49%] bg-red-200'></li>
-          <li className='h-[300px] w-[49%] bg-red-200'></li>
-          <li className='h-[300px] w-[49%] bg-red-200'></li>
-        </ul>
+        <TrainerList/>
 
         <div className='h-[3000px]'></div>
       </section>
