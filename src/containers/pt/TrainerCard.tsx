@@ -13,8 +13,7 @@ const TrainerCard = () => {
           fill
           src={'https://via.placeholder.com/150'}
           alt="임시이미지"
-          objectFit="cover"
-          objectPosition="center"
+          className=' object-cover object-center'
         />
       </div>
 
