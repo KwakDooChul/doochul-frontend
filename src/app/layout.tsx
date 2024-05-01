@@ -23,15 +23,15 @@ export default function RootLayout({
           {/* 고정 헤더 */}
           <Header />
 
-          <div className='mt-[100px]'></div>
+          <div className='mt-header'></div>
 
           {/* 사이드바, 컨텐츠 영역 */}
-          <div className='flex flex-row h-[calc(100vh - 100px)] relative'>
-            <div className='hidden fixed bottom-0 left-0 w-[240px] bg-blue-800 h-[calc(100vh-100px)] shadow-md md:block'>
+          <div className='flex flex-row h-sidebar relative'>
+            <div className='hidden fixed bottom-0 left-0 w-sidebar h-sidebar bg-blue-800 shadow-md md:block'>
               <SideNavBar />
             </div>
 
-            <div className='md:mr-[240px]'></div>
+            <div className='mr-sidebar'></div>
 
             <div className='flex-1'>
               {children}
