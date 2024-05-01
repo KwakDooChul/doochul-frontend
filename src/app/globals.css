@@ -2,3 +2,25 @@
 @tailwind components;
 @tailwind utilities;
   
+
+@layer components {
+  
+  /* 전역 헤더 레이아웃 */
+  .h-header {
+    @apply h-[80px] md:h-[100px]
+  }
+  .mt-header {
+    @apply mt-[80px] md:mt-[100px]
+  }
+
+  /* 전역 사이드바 레이아웃 */
+  .h-sidebar {
+    @apply h-[calc(100vh-80px)] md:h-[calc(100vh-100px)]
+  }
+  .w-sidebar {
+    @apply w-[240px]
+  }
+  .mr-sidebar {
+    @apply md:mr-[240px]
+  }
+}
