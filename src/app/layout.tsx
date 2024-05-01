@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Providers from '@/providers/Providers';
 import "./globals.css";
 import Header from './../components/Header';
-import SideNavBar from './../components/SideNavBar';
+import SideBarContent from '../components/SideBarContent';
 
 
 export const metadata: Metadata = {
@@ -27,8 +27,8 @@ export default function RootLayout({
 
           {/* 사이드바, 컨텐츠 영역 */}
           <div className='flex flex-row h-sidebar relative'>
-            <div className='hidden fixed bottom-0 left-0 w-sidebar h-sidebar bg-blue-800 shadow-md md:block'>
-              <SideNavBar />
+            <div className='hidden fixed bottom-0 left-0 w-sidebar h-sidebar bg-neutral-100 shadow-md md:block'>
+              <SideBarContent />
             </div>
 
             <div className='mr-sidebar'></div>
